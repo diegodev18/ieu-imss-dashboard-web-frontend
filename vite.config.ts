@@ -7,5 +7,6 @@ export default defineConfig({
   preview: {
     host: "0.0.0.0",
     allowedHosts: ["imss.dukehomelab.site"],
+    port: 4173,
   },
 });
