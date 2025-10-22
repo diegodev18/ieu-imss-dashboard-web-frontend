@@ -1,0 +1,14 @@
+[phases.setup]
+nixPkgs = ["nodejs_23"]
+
+[phases.install]
+cmds = ["npm install --omit=dev"]
+
+[phases.build]
+cmds = ["npm run build"]
+
+[start]
+cmd = "npm run preview"
+
+[variables]
+NIXPACKS_PATH = "/app"
